@@ -1,18 +1,14 @@
-import gulp  from 'gulp';
-import path from 'path';
+import gulp from 'gulp'
 
-const srcPath = './src/**/*.*';
-const distPath = path.resolve(__dirname, 'dist');
+const srcPath = './src/**/*.*'
+const distPath = './dist/'
 
-function copy() {
+gulp.task('copy', () => {
   return gulp.src(srcPath)
-    .pipe(gulp.dest(distPath));
-}
+    .pipe(gulp.dest(distPath))
+})
 
-function watch() {
-  gulp.watch(srcPath, copy);
-}
+const devSeries = gulp.series('copy')
 
-const dev = gulp.series(copy, watch);
-
-gulp.task('default', dev);
+gulp.task('dev', devSeries)
+gulp.task('default', devSeries)

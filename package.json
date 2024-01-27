@@ -6,7 +6,6 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "del": "^7.1.0",
     "gulp": "^4.0.2"
   }
 }
