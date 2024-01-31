@@ -6,6 +6,16 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "@types/gulp": "^4.0.17",
+    "@types/node": "^20.11.10",
+    "browser-sync": "^3.0.2",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.70.0"
   }
 }
