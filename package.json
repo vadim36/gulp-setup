@@ -4,17 +4,20 @@
   "main": "gulpfile.js",
   "author": "Vadim <vadim130809@gmail.com>",
   "license": "ISC",
+  "scripts": {
+    "gulp": "gulp --gulpfile config/gulpfile.js",
+    "gulp:dev": "gulp --gulpfile config/gulpfile.js dev",
+    "gulp:build": "gulp --gulpfile config/gulpfile.js build"
+  },
   "type": "module",
   "devDependencies": {
-    "@types/gulp": "^4.0.17",
-    "@types/node": "^20.11.10",
     "browser-sync": "^3.0.2",
+    "cross-env": "^7.0.3",
     "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
     "gulp-file-include": "^2.3.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
-  },
-  "dependencies": {
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-replace": "^1.1.4",
     "gulp-sass": "^5.1.0",
     "sass": "^1.70.0"
   }
